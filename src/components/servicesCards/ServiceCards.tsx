@@ -12,8 +12,8 @@ const bebas = Bebas_Neue({
 
 const ServiceCards = () => {
   return (
-    <>
-      <div className={`w-[90%] h-[260px] my-[30px] flex flex-col gap-4 p-4 bg-secondary rounded-lg shadow-md relative overflow-x-clip`}>
+    <div className='flex flex-wrap gap-4 justify-center items-center'>
+      <div className={`w-[90%] max-w-[350px] h-[260px] my-[30px] flex flex-col gap-4 p-4 bg-secondary rounded-lg shadow-md relative overflow-x-clip`}>
         {/* posistioned image */}
         <PositionedImage imageUrl={'/images/trans_audi.png'} />
           <h1 className={`${bebas.className} text-3xl`}>Sell Your Car Fast</h1>
@@ -21,7 +21,7 @@ const ServiceCards = () => {
           <Link className='font-bold inline-block w-fit border-2 border-white hover:bg-primaryHover p-2 rounded-md' href={'/'}>
             Sell Now...</Link>
       </div>
-      <div className={`w-[90%] h-[260px] my-[30px] flex flex-col gap-4 p-4 bg-primary rounded-lg shadow-md relative overflow-x-clip`}>
+      <div className={`w-[90%] max-w-[350px] h-[260px] my-[30px] flex flex-col gap-4 p-4 bg-primary rounded-lg shadow-md relative overflow-x-clip`}>
         {/* positioned image */}
         <PositionedImage imageUrl={'/images/trans_honda.png'} />
         <h1 className={`${bebas.className} text-3xl`}>Rent a Car Easily</h1>
@@ -29,7 +29,7 @@ const ServiceCards = () => {
         <Link className='font-bold inline-block w-fit border-2 border-white hover:bg-primaryHover p-2 rounded-md' href={'/'}>
           Rent Now...</Link>
       </div>
-    </>
+    </div>
   )
 }
 
