@@ -1,6 +1,9 @@
 import React from 'react'
 import { Bebas_Neue } from "next/font/google";
 
+import { TbBrandToyota } from "react-icons/tb";
+import { SiHonda, SiAudi, SiMercedes, SiBmw, SiFord, SiNissan } from "react-icons/si";
+
 
 const bebas = Bebas_Neue({
   subsets: ["latin"],
@@ -33,13 +36,25 @@ const ProductFilter = () => {
         <h3 className='mb-2 font-bold'>Shop by Make</h3>
         <div className='flex flex-wrap w-full gap-3 items-center '>
           <button className='h-14 w-14 bg-primary text-white items-center justify-center rounded-full p-2 flex'>
-            logo
+            <TbBrandToyota size={27}/>
           </button>
           <button className='h-14 w-14 bg-primary text-white items-center justify-center rounded-full p-2 flex'>
-            logo
+            <SiHonda size={27} />
           </button>
           <button className='h-14 w-14 bg-primary text-white items-center justify-center rounded-full p-2 flex'>
-            logo
+            <SiAudi size={27} />
+          </button>
+          <button className='h-14 w-14 bg-primary text-white items-center justify-center rounded-full p-2 flex'>
+            <SiMercedes size={27} />
+          </button>
+          <button className='h-14 w-14 bg-primary text-white items-center justify-center rounded-full p-2 flex'>
+            <SiBmw size={27} />
+          </button>
+          <button className='h-14 w-14 bg-primary text-white items-center justify-center rounded-full p-2 flex'>
+            <SiFord size={27} />
+          </button>
+          <button className='h-14 w-14 bg-primary text-white items-center justify-center rounded-full p-2 flex'>
+            <SiNissan size={27} />
           </button>
         </div>
       </div>
