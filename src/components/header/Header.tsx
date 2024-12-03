@@ -14,7 +14,7 @@ const Header = () => {
     <div className='font-[family-name:var(--font-geist-sans)] flex items-end bg-primary w-full h-[500px] pt-20 px-4'>
       <div className='pb-4 flex flex-col gap-4'>
 
-        <div className={`${bebas.className} text-5xl`}>Delok Autos</div>
+        <div className={`${bebas.className} text-5xl md:text-7xl`}>Delok Autos</div>
         <p className='w-10/12'>The company intro and preposition comes here</p>
         <Link className='font-bold inline-block w-fit hover:bg-primaryHover bg-accent p-2 rounded-md' href={'/contact'}>
           Contact Us
