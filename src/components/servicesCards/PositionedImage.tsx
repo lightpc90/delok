@@ -3,8 +3,8 @@ import React from 'react'
 
 const PositionedImage = ({ imageUrl }: { imageUrl: string }) => {
   return (
-    <div className='absolute top-[30%] left-[35%] h-[80%] w-[80%] '>
-        <Image src={imageUrl} alt={imageUrl} width={500} height={500} className='w-full h-full object-center object-fill '/>
+    <div className='absolute top-0 left-0 h-full w-[350px] '>
+        <Image src={imageUrl} alt={imageUrl} width={500} height={500} className='w-full h-full object-center object-cover '/>
     </div>
   )
 }
