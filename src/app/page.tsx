@@ -2,7 +2,7 @@ import Header from "@/components/header/Header";
 import Navbar from "@/components/navbar/Navbar";
 import Products from "@/components/productLayout/Products";
 import ServiceCards from "@/components/servicesCards/ServiceCards";
-import Image from "next/image";
+
 
 export default function Home() {
   return (
