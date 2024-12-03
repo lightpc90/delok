@@ -25,7 +25,7 @@ const ServiceCards = () => {
         <Link className='font-bold inline-block w-fit border-2 border-white hover:bg-primaryHover p-2 rounded-md' href={'/'}>
           Sell Now...</Link>
       </div>
-      <div className={`w-[350px] h-[260px] my-[30px] flex flex-col gap-4 p-4 bg-primary rounded-lg shadow-md relative overflow-x-clip`}>
+      <div className={`w-[350px] h-[260px] my-[30px] flex flex-col gap-4 p-4 bg-primary rounded-lg shadow-md relative`}>
         {/* positioned image wrapper */}
         <div className='absolute top-[35%] right-0 h-[80%] w-[75%] overflow-hidden'>
 
