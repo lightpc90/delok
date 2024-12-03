@@ -1,3 +1,4 @@
+import ChatButton from "@/components/chat/ChatButton";
 import Faq from "@/components/faq/Faq";
 import Header from "@/components/header/Header";
 import Navbar from "@/components/navbar/Navbar";
@@ -8,6 +9,7 @@ import ServiceCards from "@/components/servicesCards/ServiceCards";
 export default function Home() {
   return (
     <div className="font-[family-name:var(--font-geist-sans)] text-white ">
+      
       <main className="flex flex-col row-start-2 items-center sm:items-start">
         <Navbar />
         <Header />
@@ -19,6 +21,7 @@ export default function Home() {
       </main>
       <footer className="flex flex-col gap-8 row-start-3 items-center sm:items-start">
       </footer>
+      <ChatButton />
     </div>
   );
 }
