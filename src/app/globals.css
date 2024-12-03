@@ -5,14 +5,33 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
+  --primary: #21005D;
+  --secondary: #5D0038;
+  --color-neutral: #c7d0dd; /* Neutral base for text/background */
 
+  /* Accent Colors */
+  --color-accent-1: #1203e4; /* Accent for highlights */
+  --color-accent-2: #10b981; /* Accent for success */
+
+  /* State Colors */
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --primary-hover: #32028b;
+  --secondary-hover: #990c61;
+
+  /* Utility Colors */
+  --color-surface: #ffffff;
+  --color-border: #d1d5db;
+  --color-overlay: rgba(0, 0, 0, 0.5);
+}
+/* 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   color: var(--foreground);
