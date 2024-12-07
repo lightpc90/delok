@@ -2,10 +2,11 @@
 
 
 import { Bebas_Neue } from "next/font/google";
+import React, { useState, useEffect } from 'react'
 
 import { TbBrandToyota } from "react-icons/tb";
 import { SiHonda, SiAudi, SiMercedes, SiBmw, SiFord, SiNissan } from "react-icons/si";
-
+// import { cars } from '@/data/constant'
 
 const bebas = Bebas_Neue({
   subsets: ["latin"],
@@ -13,17 +14,59 @@ const bebas = Bebas_Neue({
   display: "swap",
 });
 
-// const initialState = {
-//   usedType: 'all',
-//   make: [],
-//   budget: [],
-//   model: [],
-//   year: [],
-// }
+type InitialState = {
+  usedType: 'all' | "Nigerian used" | "Foreign used" | "New";
+  makes: string[]; // This allows an array of strings of any length, including an empty array.
+  budget: string;
+  model: 'all';
+  year: 'all';
+};
+
+const initialState: InitialState = {
+  usedType: 'all',
+  makes: [],
+  budget: 'all',
+  model: 'all',
+  year: 'all',
+}
 
 const ProductFilter = () => {
-  // const [filterState, setFilterState] = useState(initialState)
-  
+  // // to store all the filters selected
+  // const [searchProps, setSearchProps] = useState(initialState)
+  // // to store the key of the latest filter added
+  // const [latestFilterKey, setLatestFilterKey] = useState('')
+  // // current filterProps
+  // const [previousFilter, setPreviousFilter] = useState(initialState)
+  // const [products, setProducts] = useState([])
+  // const [filteredProducts, setFilteredProducts] = useState([])
+
+  // const updateSearch = (filterObject: any, key: string) => {
+  //   // console.log(searchProps)
+  //   setPreviousFilter(searchProps)
+  //   setSearchProps({ ...searchProps, ...filterObject })
+  //   setLatestFilterKey(key)
+  // }
+
+  // const filteredProductsHandler = () => {
+  //   const { usedType, makes, budget, model, year } = searchProps
+  //   let isArray;
+  //   if(Array.isArray(previousFilter[latestFilterKey])){
+  //     isArray = true
+  //   } else {
+  //     isArray = false
+  //   }
+  //   const keyValue = previousFilter[latestFilterKey]
+  //   console.log("keyValue", keyValue)
+  //   //  if the key has not been searched before
+  //   if (keyValue === 'all' || (isArray && keyValue.length === 0)) {
+  //     if (usedType === 'all') {
+  //       setFilteredProducts(cars)
+  //     }
+  //   }
+  // }
+
+
+
   return (
     <div className='space-y-4 w-full p-4 flex flex-col items-center overflow-hidden'>
       <h1 className={`${bebas.className} text-3xl md:text-5xl md:text-center`}>Buy a car</h1>
@@ -48,7 +91,7 @@ const ProductFilter = () => {
         <h3 className='mb-2 font-bold'>Shop by Make</h3>
         <div className='flex flex-wrap w-[300px] md:w-[700px] gap-3 items-center justify-center '>
           <button className='h-14 w-14 bg-neutral text-white items-center justify-center rounded-full p-2 flex'>
-            <TbBrandToyota size={27}/>
+            <TbBrandToyota size={27} />
           </button>
           <button className='h-14 w-14 bg-primary text-white items-center justify-center rounded-full p-2 flex'>
             <SiHonda size={27} />
@@ -74,4 +117,4 @@ const ProductFilter = () => {
   )
 }
 
-export default ProductFilter
+export default ProductFilter;
