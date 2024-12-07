@@ -2,7 +2,7 @@
 
 
 import { Bebas_Neue } from "next/font/google";
-import React, { useState, useEffect } from 'react'
+// import React, { useState, useEffect } from 'react'
 
 import { TbBrandToyota } from "react-icons/tb";
 import { SiHonda, SiAudi, SiMercedes, SiBmw, SiFord, SiNissan } from "react-icons/si";
@@ -14,21 +14,21 @@ const bebas = Bebas_Neue({
   display: "swap",
 });
 
-type InitialState = {
-  usedType: 'all' | "Nigerian used" | "Foreign used" | "New";
-  makes: string[]; // This allows an array of strings of any length, including an empty array.
-  budget: string;
-  model: 'all';
-  year: 'all';
-};
+// type InitialState = {
+//   usedType: 'all' | "Nigerian used" | "Foreign used" | "New";
+//   makes: string[]; // This allows an array of strings of any length, including an empty array.
+//   budget: string;
+//   model: 'all';
+//   year: 'all';
+// };
 
-const initialState: InitialState = {
-  usedType: 'all',
-  makes: [],
-  budget: 'all',
-  model: 'all',
-  year: 'all',
-}
+// const initialState: InitialState = {
+//   usedType: 'all',
+//   makes: [],
+//   budget: 'all',
+//   model: 'all',
+//   year: 'all',
+// }
 
 const ProductFilter = () => {
   // // to store all the filters selected
