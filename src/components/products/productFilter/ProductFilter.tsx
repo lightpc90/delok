@@ -13,13 +13,13 @@ const bebas = Bebas_Neue({
   display: "swap",
 });
 
-const initialState = {
-  usedType: 'all',
-  make: [],
-  budget: [],
-  model: [],
-  year: [],
-}
+// const initialState = {
+//   usedType: 'all',
+//   make: [],
+//   budget: [],
+//   model: [],
+//   year: [],
+// }
 
 const ProductFilter = () => {
   // const [filterState, setFilterState] = useState(initialState)
