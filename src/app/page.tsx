@@ -10,10 +10,11 @@ import styles from "../app/glow/glow.module.css"
 export default function Home() {
   return (
     <div className="font-[family-name:var(--font-geist-sans)] text-white relative w-[100vw] overflow-hidden">
-      <div className={`${styles.glow} absolute top-[-20%] left-[-90%] h-[2000px] w-[1500px]
+      <div className={`${styles.glow} absolute top-[-6%] left-[-20%] h-[700px] w-[700px]
       transform rotate-45 bg-gradient-to-r from-primary to-secondary
       `}></div>
-      <div className={styles.blurryCircle1}></div>
+      <div className={`${styles.blurryCircle1} w-[400px] h-[400px] absolute top-0 left-0`}></div>
+      <div className={`${styles.blurryCircle2} w-[400px] h-[400px] absolute top-[700px] left-[-100px]`}></div>
       <div className={styles.blurryCircle2}></div>
       <div className={styles.blurryCircle3}></div>
       <main className="flex flex-col row-start-2 items-center sm:items-start">
