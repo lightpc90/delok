@@ -11,14 +11,25 @@ const bebas = Bebas_Neue({
 
 const Header = () => {
   return (
-    <div className='font-[family-name:var(--font-geist-sans)] flex items-end bg-primary w-full h-[500px] pt-20 px-4'>
-      <div className='pb-4 flex flex-col gap-4'>
+    <div className='font-[family-name:var(--font-geist-sans)] flex items-end justify-center w-full min-h-[1000px] md:min-h-[100vh] mb-20 pt-20 px-4'>
+      <div className='pb-4 flex flex-col items-center  gap-4'>
 
-        <div className={`${bebas.className} text-5xl md:text-7xl`}>Delok Autos</div>
-        <p className='w-10/12'>The company intro and preposition comes here</p>
-        <Link className='font-bold inline-block w-fit hover:bg-primaryHover bg-accent p-2 rounded-md' href={'/contact'}>
-          Contact Us
+        <div className={`${bebas.className} text-7xl md:text-9xl text-primary`}>Delok Autos</div>
+        <h2 className='w-10/12 text-center text-primary text-xl md:text-3xl font-bold font-mono'>--Drive the Future with Confidence</h2>
+        <p className='w-10/12 max-w-[800px] text-black text-lg font-semibold font-mono'>At Delok Autos Nig Ltd., we make buying, selling, leasing, and renting cars seamless, 
+        reliable, and rewarding. Whether you&apos;re upgrading your ride, earning from your car, or searching for the perfect vehicle, 
+        we&apos;re here to deliver exceptional value and trust every step of the way.</p>
+        <div className='flex flex-wrap gap-4 items-center justify-center'>
+          <Link className='transition-all duration-300 ease-in-out translate-x-0 hover:translate-y-1 font-bold inline-block w-fit hover:bg-white hover:text-primary border-2 border-primary bg-primary p-2 rounded-md' href={'/contact'}>
+          Explore Our Cars
         </Link>
+        <Link className='transition-all duration-300 ease-in-out translate-x-0 hover:translate-y-1 font-bold inline-block w-fit hover:bg-white hover:text-secondary border-2 border-secondary bg-secondary p-2 rounded-md' href={'/contact'}>
+          Sell Your Car
+        </Link>
+          <Link className='transition-all duration-300 ease-in-out translate-x-0 hover:translate-y-1 font-bold inline-block w-fit hover:bg-primaryHover hover:text-white border-2 border-primary text-primary p-2 rounded-md' href={'/contact'}>
+          Lease or Rent a Car
+        </Link>
+        </div>
       </div>
     </div>
   )

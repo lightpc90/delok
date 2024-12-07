@@ -1,4 +1,6 @@
-import React from 'react'
+'use client'
+
+import {useState} from 'react'
 import { Bebas_Neue } from "next/font/google";
 
 import { TbBrandToyota } from "react-icons/tb";
@@ -11,7 +13,17 @@ const bebas = Bebas_Neue({
   display: "swap",
 });
 
+const initialState = {
+  usedType: 'all',
+  make: [],
+  budget: [],
+  model: [],
+  year: [],
+}
+
 const ProductFilter = () => {
+  const [filterState, setFilterState] = useState(initialState)
+  
   return (
     <div className='space-y-4 w-full p-4 flex flex-col items-center overflow-hidden'>
       <h1 className={`${bebas.className} text-3xl md:text-5xl md:text-center`}>Buy a car</h1>

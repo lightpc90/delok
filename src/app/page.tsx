@@ -4,12 +4,16 @@ import Header from "@/components/header/Header";
 import Navbar from "@/components/navbar/Navbar";
 import Products from "@/components/products/Products";
 import ServiceCards from "@/components/servicesCards/ServiceCards";
+import styles from "../app/glow/glow.module.css"
 
 
 export default function Home() {
   return (
-    <div className="font-[family-name:var(--font-geist-sans)] text-white ">
-      
+    <div className="font-[family-name:var(--font-geist-sans)] text-white relative w-[100vw] overflow-hidden">
+      <div className={styles.glow}></div>
+      <div className={styles.blurryCircle1}></div>
+      <div className={styles.blurryCircle2}></div>
+      <div className={styles.blurryCircle3}></div>
       <main className="flex flex-col row-start-2 items-center sm:items-start">
         <Navbar />
         <Header />
