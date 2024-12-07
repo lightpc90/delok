@@ -22,7 +22,7 @@ const initialState = {
 }
 
 const ProductFilter = () => {
-  const [filterState, setFilterState] = useState(initialState)
+  // const [filterState, setFilterState] = useState(initialState)
   
   return (
     <div className='space-y-4 w-full p-4 flex flex-col items-center overflow-hidden'>
