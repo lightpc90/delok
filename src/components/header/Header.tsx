@@ -38,7 +38,7 @@ const Header = () => {
         </motion.div>
         <div className={`${bebas.className} text-7xl md:text-9xl bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500 bg-clip-text text-transparent`}>Delok Autos</div>
         <h2 className='w-10/12 text-center text-primary text-xl md:text-3xl font-bold font-mono'>--Drive the Future with Confidence</h2>
-        <p className='w-10/12 max-w-[800px] text-black text-lg font-semibold font-mono'>At Delok Autos Nig Ltd., we make buying, selling, leasing, and renting cars seamless, 
+        <p className='w-10/12 max-w-[800px] text-black text-lg text-center'>At Delok Autos Nig Ltd., we make buying, selling, leasing, and renting cars seamless, 
         reliable, and rewarding. Whether you&apos;re upgrading your ride, earning from your car, or searching for the perfect vehicle, 
         we&apos;re here to deliver exceptional value and trust every step of the way.</p>
         <div className='flex flex-wrap gap-4 items-center justify-center'>
