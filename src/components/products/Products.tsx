@@ -10,7 +10,7 @@ const Products = () => {
   
   return (
     <div className='text-zinc-900 mb-10 w-full flex flex-col gap-4 items-center'>
-      <ProductFilter setProducts={setProducts} />
+      <ProductFilter products={products} setProducts={setProducts} />
       <div className='flex flex-wrap w-full max-w-[1200px] gap-4 justify-center items-center'>
         {products.map((car, index) => (
           <ProductLayout car={car} key={index} />

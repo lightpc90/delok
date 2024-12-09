@@ -26,6 +26,4 @@ export type SearchPropsType = {
     usedType: 'all' | "Nigerian used" | "Foreign used" | "New";
     makes: string[]; // This allows an array of strings of any length, including an empty array.
     budget: string;
-    model: 'all';
-    year: 'all';
 };
