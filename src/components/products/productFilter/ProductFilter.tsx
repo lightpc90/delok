@@ -2,7 +2,7 @@
 
 
 import { Bebas_Neue } from "next/font/google";
-import React, { useState, useEffect, Dispatch, SetStateAction, FC } from 'react'
+import React, { useState, useEffect, Dispatch, SetStateAction, FC, useCallback } from 'react'
 
 import { TbBrandToyota } from "react-icons/tb";
 import { SiHonda, SiAudi, SiMercedes, SiBmw, SiFord, SiNissan } from "react-icons/si";
@@ -62,7 +62,7 @@ const ProductFilter: FC<SetProductsType> = ({ setProducts }) => {
     }
 
 
-    const filterProducts = (carFilter: SearchPropsType) => {
+    const filterProducts =(carFilter: SearchPropsType) => {
       const filtered = cars.filter(car => {
         return (
           (carFilter.usedType !== 'all' && car.usedType === carFilter.usedType) &&

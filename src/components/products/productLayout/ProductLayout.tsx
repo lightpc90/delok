@@ -21,7 +21,7 @@ const ProductLayout = ({car}: {car: Car}) => {
       {/* product info container */}
       <div className='absolute top-1/2 left-0 flex flex-col gap-2 rounded-lg text-sm md:text-lg  bg-gray-200 shadow-lg w-full h-[50%] p-1 md:p-3'>
         <div className='flex justify-between items-center'>
-          <span className='font-bold'>Honda CRV</span>
+          <span className='font-bold'>{ car.name}</span>
           <span className='text-primary'>N13M</span>
         </div>
         <div className='flex justify-between items-center'>
