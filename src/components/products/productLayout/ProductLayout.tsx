@@ -4,8 +4,9 @@ import Image from 'next/image';
 import React from 'react'
 import { TbShare2 } from "react-icons/tb";
 import { FaBookmark, FaRegBookmark } from "react-icons/fa6";
+import { Car } from '@/types/types';
 
-const ProductLayout = () => {
+const ProductLayout = ({car}: {car: Car}) => {
   const [isBookmarked, setIsBookmarked] = React.useState(false);
 
   const handleBookmark = () => {

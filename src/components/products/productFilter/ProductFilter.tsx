@@ -2,14 +2,14 @@
 
 
 import { Bebas_Neue } from "next/font/google";
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, Dispatch, SetStateAction, FC } from 'react'
 
 import { TbBrandToyota } from "react-icons/tb";
 import { SiHonda, SiAudi, SiMercedes, SiBmw, SiFord, SiNissan } from "react-icons/si";
 // constants
 import { cars } from '@/data/constant'
 // types
-import { SearchPropsType } from '@/types/types'
+import { Car, SearchPropsType } from '@/types/types'
 // enums
 import { SearchPropsKeysEnum, PriceRangeEnum, UsedTypeEnum, MakesEnum } from "@/enums/enums";
 
@@ -27,13 +27,15 @@ const initialState: SearchPropsType = {
   year: 'all',
 }
 
+type SetProductsType = {
+  setProducts: Dispatch<SetStateAction<Car[]>>
+}
+
 
 
 // default component function
-const ProductFilter = () => {
+const ProductFilter: FC<SetProductsType> = ({ setProducts }) => {
   const [search, setSearch] = useState<SearchPropsType>(initialState)
-  const [products, setProducts] = useState(cars)
-  const [isBookmarked, setIsBookmarked] = useState(false)
 
 
   // function that adds new item to a list or removes the item if existing in the list
