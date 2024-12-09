@@ -2,7 +2,7 @@
 
 
 import { Bebas_Neue } from "next/font/google";
-import React, { useState, useEffect, Dispatch, SetStateAction, FC, useCallback } from 'react'
+import React, { useState, useEffect, Dispatch, SetStateAction, FC } from 'react'
 
 import { TbBrandToyota } from "react-icons/tb";
 import { SiHonda, SiAudi, SiMercedes, SiBmw, SiFord, SiNissan } from "react-icons/si";
