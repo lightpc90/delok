@@ -5,10 +5,12 @@ import Image from 'next/image'
 import BuyButton from './BuyButton'
 import PrimaryDescription from './PrimaryDescription'
 import MoreDetails from './MoreDetails'
+import { IoHome } from "react-icons/io5";
+import Link from 'next/link'
 
-type Params =Promise<{ id: string }>
+type Params = Promise<{ id: string }>
 
-const Page = async ({ params }: { params: Params }) =>  {
+const Page = async ({ params }: { params: Params }) => {
   console.log("products: ", cars)
   const getParams = await params
   console.log("params: ", getParams)
@@ -19,9 +21,19 @@ const Page = async ({ params }: { params: Params }) =>  {
     <div className={`text-slate-900 mb-10 w-[100vw] overflow-hidden flex flex-col gap-4 items-center`}>
       <div>
         <div className='w-full flex flex-col gap-4 items-center'>
-          <Image src={`${product?.image}`} alt="product image" width={500} height={500}
-            className='w-full max-w-[600px] rounded-lg shadow-lg'
-          />
+          <div className='relative w-[100%]'>
+            <Image src={`${product?.image}`} alt="product image" width={500} height={500}
+              className='w-full max-w-[600px] rounded-lg shadow-lg'
+            />
+            <div className={`absolute top-0 left-0 p-4 w-full h-full bg-gradient-to-r opacity-30 from-primary to-secondary`}>
+              <div className='text-white text-xl font-bold'>
+                <Link href="/">
+                  <IoHome size={25} />
+                </Link>
+              </div>
+            </div>
+          </div>
+          {/* Image selection section */}
           <div className='flex gap-4 w-[100%] px-2'>
             <div className='flex-1 rounded-lg shadow-lg'>
               <Image src={`${product?.image}`} alt="product image" width={200} height={200} className='' />
@@ -39,7 +51,7 @@ const Page = async ({ params }: { params: Params }) =>  {
         {/* product description */}
         <div className={`p-4`}>
 
-        <PrimaryDescription product={product} />
+          <PrimaryDescription product={product} />
           {/* <button className='text-primary'>More Details...</button> */}
           <MoreDetails product={product} />
         </div>
