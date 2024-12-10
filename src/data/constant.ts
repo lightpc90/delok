@@ -1,6 +1,6 @@
 export const cars = [
     {
-        id: 1,
+        id: `1`,
         name: 'Honda CRV',
         image: '/images/honda.png',
         price: '₦13M',
@@ -24,7 +24,7 @@ export const cars = [
 
     },
     {
-        id: 2,
+        id: `2`,
         name: 'Honda CRV',
         image: '/images/honda.png',
         price: '₦13M',
@@ -48,7 +48,7 @@ export const cars = [
 
     },
     {
-        id: 3,
+        id: `3`,
         name: 'Honda CRV',
         image: '/images/honda.png',
         price: '₦13M',
@@ -72,7 +72,7 @@ export const cars = [
 
     },
     {
-        id: 4,
+        id: `4`,
         name: 'Honda CRV',
         image: '/images/honda.png',
         price: '₦13M',
@@ -96,7 +96,7 @@ export const cars = [
 
     },
     {
-        id: 5,
+        id: `5`,
         name: 'Honda CRV',
         image: '/images/honda.png',
         price: '₦13M',
@@ -120,7 +120,7 @@ export const cars = [
 
     },
     {
-        id: 6,
+        id: `6`,
         name: 'Honda CRV',
         image: '/images/honda.png',
         price: '₦13M',
@@ -144,7 +144,7 @@ export const cars = [
 
     },
     {
-        id: 7,
+        id: `7`,
         name: 'Honda CRV',
         image: '/images/honda.png',
         price: '₦13M',
@@ -168,7 +168,7 @@ export const cars = [
 
     },
     {
-        id: 8,
+        id: `8`,
         name: 'Honda CRV',
         image: '/images/honda.png',
         price: '₦13M',
@@ -192,7 +192,7 @@ export const cars = [
 
     },
     {
-        id: 9,
+        id: `9`,
         name: 'Honda CRV',
         image: '/images/honda.png',
         price: '₦13M',
@@ -216,7 +216,7 @@ export const cars = [
 
     },
     {
-        id: 10,
+        id: `10`,
         name: 'Honda CRV',
         image: '/images/honda.png',
         price: '₦13M',
@@ -240,7 +240,7 @@ export const cars = [
 
     },
     {
-        id: 11,
+        id: `11`,
         name: 'Honda CRV',
         image: '/images/honda.png',
         price: '₦13M',
