@@ -1,14 +1,13 @@
-import {FC} from 'react'
+
 import { cars } from '../../../data/constant'
 import { Car } from "@/types/types"
 import Image from 'next/image'
 import BuyButton from './BuyButton'
 import PrimaryDescription from './PrimaryDescription'
 
-type Props = {
-  params: { id: string } 
-}
-const Page: FC<Props> = async ({ params }) => {
+type Params =Promise<{ id: string }>
+
+const Page = async ({ params }: { params: Params }) =>  {
   console.log("products: ", cars)
   const getParams = await params
   console.log("params: ", getParams)
