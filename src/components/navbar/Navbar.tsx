@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import { RiMenuFill } from "react-icons/ri";
 
 const Navbar = () => {
   return (
@@ -7,8 +8,8 @@ const Navbar = () => {
         <span className='h-[50px] w-[50px] rounded-full bg-accent flex items-center justify-center overflow-hidden'>
           <Image src={`/icons/icon.jpeg`} alt='logo' width={500} height={500} className='w-full h-full object-cover object-center '/>
         </span>
-        <span>Links</span>
-        <span>Mobile Menu</span>
+        <span>Delok Autos</span>
+      <span><RiMenuFill size={30} /></span>
     </nav>
   )
 }
