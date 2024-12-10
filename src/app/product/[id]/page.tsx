@@ -4,6 +4,7 @@ import { Car } from "@/types/types"
 import Image from 'next/image'
 import BuyButton from './BuyButton'
 import PrimaryDescription from './PrimaryDescription'
+import MoreDetails from './MoreDetails'
 
 type Params =Promise<{ id: string }>
 
@@ -39,7 +40,8 @@ const Page = async ({ params }: { params: Params }) =>  {
         <div className={`p-4`}>
 
         <PrimaryDescription product={product} />
-        <button className='text-primary'>More Details...</button>
+          {/* <button className='text-primary'>More Details...</button> */}
+          <MoreDetails product={product} />
         </div>
       </div>
     </div >
