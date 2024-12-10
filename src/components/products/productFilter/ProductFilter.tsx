@@ -11,6 +11,8 @@ import { Car, SearchPropsType } from '@/types/types'
 // enums
 import { SearchPropsKeysEnum, PriceRangeEnum, UsedTypeEnum, MakesEnum } from "@/enums/enums";
 
+import { getFilteredProducts } from "@/utils/getFilteredProducts"
+
 const bebas = Bebas_Neue({
   subsets: ["latin"],
   weight: "400", // Bebas Neue only supports 400 weight
@@ -21,6 +23,7 @@ const initialState: SearchPropsType = {
   usedType: 'all',
   makes: [],
   budget: 'all',
+  searchQuery: '',
 }
 
 type ProductsPropsType = {
@@ -33,129 +36,38 @@ type ProductsPropsType = {
 // default component function
 const ProductFilter: FC<ProductsPropsType> = ({ products, setProducts }) => {
   const [search, setSearch] = useState<SearchPropsType>(initialState)
-  const [filteredList, setFilteredList] = useState([])
-  const [makes, setMakes] = useState([])
-
-
-  // function that adds new item to a list or removes the item if existing in the list
-  // const handleAddRemove = (item: string) => {
-  //   if (search.makes.includes(item)) {
-  //     setSearch({
-  //       ...search, makes: search.makes.filter((make) => make !== item)
-  //     })
-  //   }
-  //   else {
-  //     setSearch({ ...search, makes: [...search.makes, item] })
-  //   }
-  // // }
-  //   const updateSearchProps = (key: string, value: string) => {
-  //     // if the key is makes, add value to the list of makes in the search object
-  //     if (key === SearchPropsKeysEnum.MAKES) {
-  //       handleAddRemove(value)
-  //     } else {
-  //       setSearch({
-  //         ...search,
-  //         [key]: value
-  //       })
-  //     }
-  //   }
-
-
-  // const filterProducts = (carFilter: SearchPropsType) => {
-  //   if (filteredList.length === 0) {
-
-  //     }
-  //     const filtered = cars.filter(car => (
-  //       (car.usedType === carFilter.usedType || car.usedType === 'all')
-  //       // (car.priceRange === carFilter.budget || car.priceRange) &&
-  //       // (carFilter.makes.includes(car.make) || car.make)
-
-  //     ))
-  //     console.log("filtered list: ", filtered)
-  //     console.log("search props: ", search)
-  //     setProducts(filtered)
-  //     console.log("filter ran...")
-  //   }
-
-  //   useEffect(() => {
-  //     filterProducts(search)
-  //   }, [search])
+  const [makes, setMakes] = useState<string[]>([])
 
 
   const handleAddRemove = (item: string) => {
-    if (makes.includes(item)) {
-      return [makes.filter((make) => make !== item)]
+    if (makes?.includes(item)) {
+      console.log("makes to check: ", makes)
+      return makes.filter((make) => make !== item)
     }
     else {
-      return [...makes, item]
+      return [...makes, item];
     }
   }
 
+
   const filterProducts = (searchKey: string, value: string) => {
-    // when the product has not been filtered
-    console.log("filteredList: ", filteredList)
-    if (filteredList.length <= 0) {
-      console.log("filtering unfiltered list...")
-      // if the key beign searched is not makes list
-      if (searchKey !== SearchPropsKeysEnum.MAKES) {
-        console.log("filtering used_mode or budget: unfiltered")
-        
-        // return all the products with ay thruthy value in this key
-        if (value === "all") {
-          const newList = products.filter((product: Car) => (product[searchKey]))
-          setSearch({ ...search, [searchKey]: value })
-          console.log("search: ", { ...search, [searchKey]: value })
-          setFilteredList(newList)
-          return
-        }
-        // other values other than "all" is searched
-        const newList = products.filter((product: Car) => (product[searchKey] === value))
-        setSearch({ ...search, [searchKey]: value })
-        console.log("search: ", { ...search, [searchKey]: value })
-        setFilteredList(newList)
-      }
-      // the key searched is makes list
-      else if (searchKey === SearchPropsKeysEnum.MAKES) {
-        console.log("filtering makes: unfiltered")
-        const updatedMakes = handleAddRemove(value)
-        setSearch({ ...search, [searchKey]: updatedMakes })
-        console.log("U: updated makes: ", updatedMakes)
-        const newList = products.filter((product: Car) => (updatedMakes.length > 0 && (updatedMakes.includes(product.make))))
-        setFilteredList(newList)
-      }
+    if (searchKey === "makes") {
+      const makeList: string[] = handleAddRemove(value)
+      setMakes(makeList)
+      console.log("makes: ", makeList)
+      setSearch((prev) => ({ ...prev, [searchKey]: makeList }))
+    } else {
+      setSearch((prev) => ({ ...prev, [searchKey]: value }))
     }
-    // running filter on filtered products
-    else {
-      if (searchKey !== SearchPropsKeysEnum.MAKES) {
-        console.log("filtering filtered...")
-        setSearch({ ...search, [searchKey]: value })
-        console.log("search", { ...search, [searchKey]: value })
-        if (value === "all") {
-          const newList = filteredList.filter((product: Car) => (product[searchKey]))
-          setFilteredList(newList)
-          return
-        }
-        const newList = filteredList.filter((product: Car) => (product[searchKey] === value))
-        setFilteredList(newList)
-      }
-      else if (searchKey === SearchPropsKeysEnum.MAKES) {
-        console.log("make filter on filtered list")
-        const updatedMakes = handleAddRemove(value)
-        setSearch({ ...search, [searchKey]: updatedMakes })
-        console.log("search", { ...search, [searchKey]: updatedMakes })
-        console.log("F: updated makes: ", updatedMakes)
-        const newList = filteredList.filter((product: Car) => (updatedMakes.length > 0 && (updatedMakes.includes(product.make))))
-        setFilteredList(newList)
-      }
-    }
-    console.log("filter ran...")
   }
 
   useEffect(() => {
-    if (filteredList.length > 0) {
-      setProducts(filteredList)
+    console.log("filter: ", search)
+    const filtered = getFilteredProducts(products, search)
+    if (filtered.length > 0) {
+      setProducts(getFilteredProducts(products, search))
     }
-  }, [filteredList])
+  }, [search])
 
 
 
