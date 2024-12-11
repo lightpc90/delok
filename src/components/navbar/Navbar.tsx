@@ -13,7 +13,7 @@ const Navbar = () => {
         <span className='h-[50px] w-[50px] rounded-full bg-accent flex items-center justify-center overflow-hidden'>
           <Image src={`/icons/icon.jpeg`} alt='logo' width={500} height={500} className='w-full h-full object-cover object-center '/>
         </span>
-        <Link href={`/`}>Delok Autos</Link>
+        <Link className='font-mono text-2xl' href={`/`}>Delok Autos</Link>
       <span onClick={() => setIsOpen(!isOpen)}>{ isOpen ? <RiMenu4Fill size={30} /> : <RiMenuFill size={30} />}</span>
     </nav>
   )
