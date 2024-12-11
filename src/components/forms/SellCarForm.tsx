@@ -18,7 +18,7 @@ const SellCarForm = () => {
                   className='border-2 border-gray-300 rounded-md p-2' >
                   <option>Driver License</option>
                   <option>National ID</option>
-                  <option>Int'l Passport</option>
+                  <option>{`Int'l Passport`}</option>
               </select>
           </label>
 

@@ -1,7 +1,6 @@
 import ChatButton from "@/components/chat/ChatButton";
 import Faq from "@/components/faq/Faq";
 import Header from "@/components/header/Header";
-import Navbar from "@/components/navbar/Navbar";
 import Products from "@/components/products/Products";
 import ServiceCards from "@/components/servicesCards/ServiceCards";
 import styles from "../app/glow/glow.module.css"
