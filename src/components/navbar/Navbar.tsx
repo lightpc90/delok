@@ -9,7 +9,7 @@ import { RiMenu4Fill } from "react-icons/ri";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <nav className='fixed bg-primary text-white top-0 left-0 flex items-center justify-between gap-4 h-20 w-full px-4 z-[100]'>
+    <nav className='fixed bg-primary text-white top-0 left-0 flex items-center justify-between gap-4 h-20 w-full px-4 lg:px-[100px] z-[100]'>
         <span className='h-[50px] w-[50px] rounded-full bg-accent flex items-center justify-center overflow-hidden'>
           <Image src={`/icons/icon.jpeg`} alt='logo' width={500} height={500} className='w-full h-full object-cover object-center '/>
         </span>

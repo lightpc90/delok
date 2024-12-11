@@ -3,10 +3,9 @@ import React from 'react'
 
 const PrimaryDescription = ({product}: {product: Car | undefined}) => {
   return (
-      <div className=''>
-
-          <h1 className='bg-gray-200 rounded-md p-1 text-sm inline-block'>{product?.usedType}</h1>
-          <h1 className=' border-b-2 border-gray-200 my-2'>
+      <div className='w-full flex flex-col gap-2'>
+          <h1 className='bg-gray-200 rounded-md p-1 text-sm w-fit'>{product?.usedType}</h1>
+          <h1 className=' border-b-2 border-gray-200 my-2 w-full'>
               <span>Vehicle Name: </span>
               <span className='font-semibold'>
                   {product?.name}

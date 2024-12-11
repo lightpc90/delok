@@ -5,7 +5,7 @@ import { useState } from 'react'
 const BuyButton = () => {
     const [show, setShow] = useState<boolean>(false)
     return (
-        <div className='flex flex-col gap-2 px-10 my-5'>
+        <div className='flex flex-col gap-2 px-10 my-5 w-full max-w-[400px]'>
             <button onClick={() => { setShow(!show) }} className='bg-primary rounded-md py-2 px-4 text-white hover:bg-primaryHover'>Buy Now</button>
             {show && <div>
                 <div>
