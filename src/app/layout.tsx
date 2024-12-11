@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import ConditionalLayout from "@/components/Layout";
+import ChatButton from "@/components/chat/ChatButton";
 
 
 
@@ -34,6 +35,7 @@ export default function RootLayout({
       >
         <ConditionalLayout>
           {children}
+          <ChatButton />
         </ConditionalLayout>
       </body>
     </html>
