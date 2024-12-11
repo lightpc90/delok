@@ -42,13 +42,13 @@ const Header = () => {
         reliable, and rewarding. Whether you&apos;re upgrading your ride, earning from your car, or searching for the perfect vehicle, 
         we&apos;re here to deliver exceptional value and trust every step of the way.</p>
         <div className='flex flex-wrap gap-4 items-center justify-center'>
-          <Link className='transition-all duration-300 ease-in-out translate-x-0 hover:translate-y-1 font-bold inline-block w-fit hover:bg-white hover:text-primary border-2 border-primary bg-primary p-2 rounded-md' href={'/contact'}>
+          <Link className='transition-all duration-300 ease-in-out translate-x-0 hover:translate-y-1 font-bold inline-block w-fit hover:bg-white hover:text-primary border-2 border-primary bg-primary p-2 rounded-md' href={'/#cars'}>
           Explore Our Cars
         </Link>
-        <Link className='transition-all duration-300 ease-in-out translate-x-0 hover:translate-y-1 font-bold inline-block w-fit hover:bg-white hover:text-secondary border-2 border-secondary bg-secondary p-2 rounded-md' href={'/contact'}>
+        <Link className='transition-all duration-300 ease-in-out translate-x-0 hover:translate-y-1 font-bold inline-block w-fit hover:bg-white hover:text-secondary border-2 border-secondary bg-secondary p-2 rounded-md' href={'/sell-a-car'}>
           Sell Your Car
         </Link>
-          <Link className='transition-all duration-300 ease-in-out translate-x-0 hover:translate-y-1 font-bold inline-block w-fit hover:bg-primaryHover hover:text-white border-2 border-primary text-primary p-2 rounded-md' href={'/contact'}>
+          <Link className='transition-all duration-300 ease-in-out translate-x-0 hover:translate-y-1 font-bold inline-block w-fit hover:bg-primaryHover hover:text-white border-2 border-primary text-primary p-2 rounded-md' href={'/rent-a-car'}>
           Lease or Rent a Car
         </Link>
         </div>

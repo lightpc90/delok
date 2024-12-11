@@ -16,7 +16,6 @@ export default function Home() {
       <div className={`${styles.blurryCircle1} w-[400px] h-[400px] absolute top-0 left-0`}></div>
       <div className={`${styles.blurryCircle2} w-[400px] h-[400px] absolute top-[700px] left-[-100px]`}></div>
       <main className="flex flex-col row-start-2 items-center sm:items-start">
-        <Navbar />
         <Header />
         <section className="flex flex-col w-full gap-8 row-start-3 items-center">
         <ServiceCards />
