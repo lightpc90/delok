@@ -73,7 +73,7 @@ const ProductFilter: FC<ProductsPropsType> = ({ products, setProducts }) => {
 
   return (
     <div className='space-y-4 w-full p-4 flex flex-col items-center overflow-hidden'>
-      <h1 className={`${bebas.className} text-3xl md:text-5xl md:text-center`}>Buy a car</h1>
+      <h1 id="cars" className={`${bebas.className} text-3xl md:text-5xl md:text-center`}>Buy a car</h1>
       <div className='flex flex-flex-wrap items-center gap-4 w-full justify-center'>
         <button
           onClick={() => { filterProducts(SearchPropsKeysEnum.USED_TYPE, UsedTypeEnum.ALL) }}
