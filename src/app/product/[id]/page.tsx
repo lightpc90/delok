@@ -18,7 +18,7 @@ const Page = async ({ params }: { params: Params }) => {
   console.log("product: ", product)
   console.log()
   return (
-    <div className={`text-slate-900 mb-10 w-[100vw] overflow-hidden flex flex-col gap-4 items-center mt-[80px]`}>
+    <div className={`text-slate-900 mb-10 w-[100vw] overflow-hidden flex flex-col gap-4 items-center`}>
       <div className='w-full flex flex-col gap-4 items-center'>
         <div className='w-full max-w-[800px] flex flex-col gap-4 items-center'>
           {/* image, back button and gradient */}

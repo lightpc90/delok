@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import ConditionalLayout from "@/components/Layout";
 import ChatButton from "@/components/chat/ChatButton";
+import Contact from "@/components/navbar/Contact";
 
 
 
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased w-[100dvw] overflow-x-hidden`}
       >
+        <Contact />
         <ConditionalLayout>
           {children}
           <ChatButton />
