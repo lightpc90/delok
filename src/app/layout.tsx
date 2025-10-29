@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`antialiased w-[100dvw] overflow-x-hidden`}>
+			<body className={`w-[100vw]`}>
 				<ConditionalLayout>
 					{children}
 					<ChatButton />
