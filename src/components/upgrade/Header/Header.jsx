@@ -3,7 +3,7 @@ import React from "react";
 
 const Header = () => {
 	return (
-		<section className=" px-[40px] h-[100px] w-full flex items-center justify-between text-sky-600 font-semibold bg-slate-200 shadow-sm mb-[50px]">
+		<section className=" px-[40px] h-[100px] w-full flex items-center justify-between text-[#043369] font-semibold bg-[#eaf3ff] shadow-sm">
 			<div className="text-2xl">Delok Autos</div>
 			<div className="flex items-center gap-[40px]">
 				<button className="p-3 rounded-md bg-blue-700 text-white shadow-md">

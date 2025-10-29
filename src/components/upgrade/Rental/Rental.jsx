@@ -2,8 +2,8 @@ import React from "react";
 
 const Rental = () => {
 	return (
-		<section className="bg-slate-200 flex flex-col gap-4 my-[20px] py-[40px]">
-			<div className="w-full max-w-[1500px] mx-auto">
+		<section className=" py-[50px]">
+			<div className="w-full max-w-[1500px] mx-auto flex flex-col gap-4">
 				<h1 className="text-3xl font-bold">Car Rentals</h1>
 				<p>
 					Find the perfect ride for your trip. Transparent pricing, daily or
@@ -35,7 +35,12 @@ const Rental = () => {
 						</label>
 					</div>
 					{/* car cards */}
-					<div className="my-[20px] ring-2 ring-slate-200 shadow-md rounded-md w-[250px] h-[300px]"></div>
+					<div className="w-full flex flex-wrap my-[20px] gap-4 justify-between">
+						<div className=" ring-2 ring-slate-200 shadow-md rounded-md w-[300px] h-[350px]"></div>
+						<div className=" ring-2 ring-slate-200 shadow-md rounded-md w-[300px] h-[350px]"></div>
+						<div className=" ring-2 ring-slate-200 shadow-md rounded-md w-[300px] h-[350px]"></div>
+						<div className=" ring-2 ring-slate-200 shadow-md rounded-md w-[300px] h-[350px]"></div>
+					</div>
 				</div>
 			</div>
 		</section>

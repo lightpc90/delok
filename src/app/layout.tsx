@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 // import localFont from "next/font/local";
 import "./globals.css";
 import ConditionalLayout from "@/components/Layout";
 import ChatButton from "@/components/chat/ChatButton";
+
+const inter = Inter({
+	subsets: ["latin"],
+	variable: "--font-inter",
+});
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -27,7 +33,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`w-[100vw]`}>
+			<body className={`${inter.variable} w-[100vw]`}>
 				<ConditionalLayout>
 					{children}
 					<ChatButton />
