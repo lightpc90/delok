@@ -1,4 +1,6 @@
 import React from "react";
+import { FiMapPin } from "react-icons/fi";
+import { LuCalendarCheck, LuCar } from "react-icons/lu";
 
 const Rental = () => {
 	return (
@@ -15,21 +17,32 @@ const Rental = () => {
 				{/* input forms */}
 				<div className="bg-white ring-2 ring-slate-200 shadow-md rounded-lg flex flex-col gap-4 p-6 mx-auto w-full">
 					<div className="w-full flex items-center gap-3">
-						<label className="flex-1 w-full">
+						<label className="flex-1 w-full relative">
+							<span className="absolute right-2 top-[50%] translate-y-[-50%] ">
+								<FiMapPin />
+							</span>
 							<input
 								className="ring-2 ring-slate-200 rounded-md shadow-md p-3 w-full"
 								type="text"
 								placeholder="Location"
 							/>
 						</label>
-						<label className="flex-1 w-full">
+
+						<label className="flex-1 w-full relative">
+							<span className="absolute right-2 top-[50%] translate-y-[-50%] ">
+								<LuCalendarCheck />
+							</span>
+
 							<input
 								className="ring-2 ring-slate-200 rounded-md shadow-md p-3 w-full"
 								type="text"
 								placeholder="Date"
 							/>
 						</label>
-						<label className="flex-1 w-full">
+						<label className="flex-1 w-full relative">
+							<span className="absolute right-2 top-[50%] translate-y-[-50%] ">
+								<LuCar />
+							</span>
 							<input
 								className="ring-2 ring-slate-200 rounded-md shadow-md p-3 w-full"
 								type="text"

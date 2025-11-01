@@ -1,4 +1,10 @@
 import React from "react";
+import { FiMapPin, FiShoppingBag } from "react-icons/fi";
+import { LuCalendarCheck, LuBadgeDollarSign } from "react-icons/lu";
+import { GoPerson } from "react-icons/go";
+
+import { MdCarRental } from "react-icons/md";
+import { GiStarSattelites } from "react-icons/gi";
 
 const Hero = () => {
 	return (
@@ -7,9 +13,10 @@ const Hero = () => {
 			className="bg-white py-[50px] my-[100px]"
 		>
 			<div className="flex flex-wrap items-center w-full max-w-[1500px] mx-auto">
-				<div className="flex-1 flex-col gap-4">
+				<div className="flex-1 flex-col gap-8">
 					<div className="mb-4">
-						<p className="text-sm text-sky-600 bg-slate-200 rounded-lg py-2 px-3 w-fit">
+						<p className="text-sm text-sky-600 bg-slate-200 rounded-lg py-2 px-3 w-fit flex items-center gap-2">
+							<GiStarSattelites />
 							Premium rentals. easy sales
 						</p>
 						<h1 className="font-bold text-[#0f1724] text-4xl">
@@ -23,27 +30,34 @@ const Hero = () => {
 						and a handpicked selection of vehicles for sale
 					</p>
 					<div className="flex gap-2 font-bold">
-						<button className="bg-blue-700 text-white py-3 px-6 rounded-3xl shadow-md">
+						<button className="bg-blue-700 text-white py-3 px-6 rounded-3xl shadow-md flex items-center gap-2">
+							<MdCarRental />
 							Rent a Car
 						</button>
-						<button className="bg-slate-200 text-blue-700 py-3 px-6 rounded-3xl shadow-md">
+						<button className="bg-slate-200 text-blue-700 py-3 px-6 rounded-3xl shadow-md flex items-center gap-2">
+							<LuBadgeDollarSign />
 							Sell Your Car
 						</button>
-						<button className="bg-slate-200 text-blue-700 py-3 px-6 rounded-3xl shadow-md">
+						<button className="bg-slate-200 text-blue-700 py-3 px-6 rounded-3xl shadow-md flex items-center gap-2">
+							<FiShoppingBag />
 							Browse Cars
 						</button>
 					</div>
 				</div>
 				{/* location form */}
 				<div className="ring-2 ring-slate-100 shadow-lg rounded-md p-8 flex flex-col">
-					<div>
-						<span>ico</span>
+					<div className="flex items-center gap-2">
+						<span>
+							<FiMapPin />
+						</span>
 						<select className="ring-2 ring-slate-200 p-2 rounded-md m-2 shadow-sm ">
 							<option>Pickup location</option>
 						</select>
 					</div>
-					<div>
-						<span>ico</span>
+					<div className="flex items-center gap-2">
+						<span>
+							<LuCalendarCheck />
+						</span>
 						<input
 							type="date"
 							placeholder="Start date"
@@ -55,8 +69,10 @@ const Hero = () => {
 							className="ring-2 ring-slate-200 p-2 rounded-md m-2 shadow-sm "
 						/>
 					</div>
-					<div>
-						<spav>ico</spav>
+					<div className="flex items-center gap-2">
+						<spav>
+							<GoPerson />
+						</spav>
 						<select className="ring-2 ring-slate-200 p-2 rounded-md m-2 shadow-sm ">
 							<option>Driver age</option>
 						</select>

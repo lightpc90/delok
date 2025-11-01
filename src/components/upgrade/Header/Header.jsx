@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { LuCalendarCheck } from "react-icons/lu";
 
 const Header = () => {
 	return (
@@ -20,8 +21,9 @@ const Header = () => {
 				<Link href={`/#contact`}>Contact Us</Link>
 				<Link
 					href={`/#booking`}
-					className="bg-blue-950 p-2 shadow-sm rounded-md text-blue-500 inline-block"
+					className="bg-blue-950 p-2 shadow-sm rounded-md text-blue-500 flex items-center gap-2 "
 				>
+					<LuCalendarCheck />
 					Book a Rental
 				</Link>
 			</div>
