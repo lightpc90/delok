@@ -2,7 +2,10 @@ import React from "react";
 
 const Rental = () => {
 	return (
-		<section className=" py-[50px]">
+		<section
+			id="rental"
+			className=" py-[50px]"
+		>
 			<div className="w-full max-w-[1500px] mx-auto flex flex-col gap-4">
 				<h1 className="text-3xl font-bold">Car Rentals</h1>
 				<p className="text-[#667085]">

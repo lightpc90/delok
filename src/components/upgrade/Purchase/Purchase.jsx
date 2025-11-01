@@ -2,7 +2,10 @@ import React from "react";
 
 const Purchase = () => {
 	return (
-		<section className="bg-[#eaf3ff] py-[50px]">
+		<section
+			id="buy"
+			className="bg-[#eaf3ff] py-[50px]"
+		>
 			<div className="w-full max-w-[1500px] flex flex-col gap-4 mx-auto ">
 				<h1 className="font-bold text-3xl">Sell Your Car to Us</h1>
 				<p className="text-[#667085]">

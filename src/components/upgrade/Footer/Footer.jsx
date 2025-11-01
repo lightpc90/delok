@@ -3,12 +3,15 @@ import React from "react";
 
 const Footer = () => {
 	return (
-		<section className="bg-[#eaf3ff] py-[50px]">
-			<div className="ring-2 ring-slate-200 max-w-[1500px] py-6 mx-auto flex flex-wrap justify-between px-6">
+		<section
+			id="footer"
+			className="bg-[#eaf3ff] py-[50px] text-[#043369]"
+		>
+			<div className="ring-2 ring-slate-200 max-w-[1500px] bg-[#f7faff] py-6 mx-auto flex flex-wrap justify-between px-6">
 				{/* Website title */}
 				<div className="">
 					<div className="flex items-center gap-3 mb-2">
-						ico <h2 className="font-bold text-xl">Delok Autos</h2>
+						ico <h2 className="font-bold text-3xl">Delok Autos</h2>
 					</div>
 					<p>
 						professional rentals, easy sales,

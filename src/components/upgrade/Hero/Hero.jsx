@@ -2,14 +2,17 @@ import React from "react";
 
 const Hero = () => {
 	return (
-		<section className="bg-white py-[50px]">
+		<section
+			id="hero"
+			className="bg-white py-[50px] my-[100px]"
+		>
 			<div className="flex flex-wrap items-center w-full max-w-[1500px] mx-auto">
 				<div className="flex-1 flex-col gap-4">
 					<div className="mb-4">
 						<p className="text-sm text-sky-600 bg-slate-200 rounded-lg py-2 px-3 w-fit">
 							Premium rentals. easy sales
 						</p>
-						<h1 className="font-bold text-[#0f1724] text-3xl">
+						<h1 className="font-bold text-[#0f1724] text-4xl">
 							Car Rentals, Easy Sales, <br />
 							and Curated Buys
 						</h1>
