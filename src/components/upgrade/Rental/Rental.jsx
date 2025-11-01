@@ -5,12 +5,12 @@ const Rental = () => {
 		<section className=" py-[50px]">
 			<div className="w-full max-w-[1500px] mx-auto flex flex-col gap-4">
 				<h1 className="text-3xl font-bold">Car Rentals</h1>
-				<p>
+				<p className="text-[#667085]">
 					Find the perfect ride for your trip. Transparent pricing, daily or
 					weekly plans, and simple pickup
 				</p>
 				{/* input forms */}
-				<div className="bg-white ring-2 ring-slate-200 shadow-md rounded-lg flex flex-col gap-4 w-[95%] 3xl:w-[80%] p-6 mx-auto">
+				<div className="bg-white ring-2 ring-slate-200 shadow-md rounded-lg flex flex-col gap-4 p-6 mx-auto w-full">
 					<div className="w-full flex items-center gap-3">
 						<label className="flex-1 w-full">
 							<input

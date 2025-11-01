@@ -5,7 +5,7 @@ const Purchase = () => {
 		<section className="bg-[#eaf3ff] py-[50px]">
 			<div className="w-full max-w-[1500px] flex flex-col gap-4 mx-auto ">
 				<h1 className="font-bold text-3xl">Sell Your Car to Us</h1>
-				<p>
+				<p className="text-[#667085]">
 					Get a fast, fair cash offer. We handle paperwork and payment the same
 					day.
 				</p>
@@ -17,7 +17,9 @@ const Purchase = () => {
 							<span>ico</span>
 							<div className="flex flex-col">
 								<h2 className="font-bold">1.Tell us about your car</h2>
-								<p>Year, make, model, mileage, and condition</p>
+								<p className="text-[#667085]">
+									Year, make, model, mileage, and condition
+								</p>
 							</div>
 						</div>
 						{/* Get an instant offer */}
@@ -25,7 +27,9 @@ const Purchase = () => {
 							<span>ico</span>
 							<div className="flex flex-col">
 								<h2 className="font-bold">2.Get an instant offer</h2>
-								<p>No hidden fees, valid for 7 days</p>
+								<p className="text-[#667085]">
+									No hidden fees, valid for 7 days
+								</p>
 							</div>
 						</div>
 						{/* tell us about your car */}
@@ -33,7 +37,9 @@ const Purchase = () => {
 							<span>ico</span>
 							<div className="flex flex-col">
 								<h2 className="font-bold">3.Free pickup and payment</h2>
-								<p>We pay on the spot, and handle DMV</p>
+								<p className="text-[#667085]">
+									We pay on the spot, and handle DMV
+								</p>
 							</div>
 						</div>
 					</div>

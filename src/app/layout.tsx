@@ -33,7 +33,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${inter.variable} w-[100vw]`}>
+			<body className={`${inter.className} w-[100vw]`}>
 				<ConditionalLayout>
 					{children}
 					<ChatButton />

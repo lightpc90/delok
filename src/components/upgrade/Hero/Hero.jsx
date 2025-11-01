@@ -3,28 +3,30 @@ import React from "react";
 const Hero = () => {
 	return (
 		<section className="bg-white py-[50px]">
-			<div className="flex flex-wrap items-center px-[40px] w-full max-w-[1500px] mx-auto">
+			<div className="flex flex-wrap items-center w-full max-w-[1500px] mx-auto">
 				<div className="flex-1 flex-col gap-4">
 					<div className="mb-4">
 						<p className="text-sm text-sky-600 bg-slate-200 rounded-lg py-2 px-3 w-fit">
 							Premium rentals. easy sales
 						</p>
 						<h1 className="font-bold text-[#0f1724] text-3xl">
-							Car Rentals, Easy Sales, and Curated Buys
+							Car Rentals, Easy Sales, <br />
+							and Curated Buys
 						</h1>
 					</div>
 					<p className="mb-4 text-[#667085]">
-						Professional service with flexible rentals, instant cash offers for
-						your car, and a handpicked selection of vehicles for sale
+						Professional service with flexible rentals,
+						<br /> instant cash offers for your car, <br />
+						and a handpicked selection of vehicles for sale
 					</p>
 					<div className="flex gap-2 font-bold">
-						<button className="bg-blue-700 text-white p-3 rounded-3xl shadow-md">
+						<button className="bg-blue-700 text-white py-3 px-6 rounded-3xl shadow-md">
 							Rent a Car
 						</button>
-						<button className="bg-slate-200 text-blue-700 p-3 rounded-3xl shadow-md">
+						<button className="bg-slate-200 text-blue-700 py-3 px-6 rounded-3xl shadow-md">
 							Sell Your Car
 						</button>
-						<button className="bg-slate-200 text-blue-700 p-3 rounded-3xl shadow-md">
+						<button className="bg-slate-200 text-blue-700 py-3 px-6 rounded-3xl shadow-md">
 							Browse Cars
 						</button>
 					</div>
