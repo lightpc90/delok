@@ -44,8 +44,8 @@ const Contact = () => {
 						</button>
 					</div>
 					{/* Map */}
-					<div className="bg-white rounded-2xl shadow-md w-[600px] h-[400px]">
-						Map
+					<div className="bg-white rounded-2xl shadow-md w-[600px] h-[400px] p-6">
+						<p className="font-bold">Visit our office</p>
 					</div>
 				</div>
 			</div>

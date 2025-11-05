@@ -1,4 +1,6 @@
 import React from "react";
+import { LuNotepadText, LuBadgeDollarSign } from "react-icons/lu";
+import { FaRegHandshake } from "react-icons/fa6";
 
 const Purchase = () => {
 	return (
@@ -16,10 +18,10 @@ const Purchase = () => {
 				<div className="flex gap-3 w-full">
 					<div className="flex gap-3">
 						{/* tell us about your car */}
-						<div className="flex gap-2 w-[180px] h-[200px] rounded-xl ring-1 ring-slate-200 shadow-sm bg-white p-3">
-							<span>ico</span>
-							<div className="flex flex-col">
-								<h2 className="font-bold">1.Tell us about your car</h2>
+						<div className="flex gap-2 w-[180px] h-[200px] rounded-xl ring-1 ring-slate-200 shadow-sm bg-white p-3 ">
+							<span>{/* <LuNotepadText /> */}</span>
+							<div className="flex flex-col gap-3">
+								<h2 className="font-bold text-xl">1.Tell us about your car</h2>
 								<p className="text-[#667085]">
 									Year, make, model, mileage, and condition
 								</p>
@@ -27,9 +29,11 @@ const Purchase = () => {
 						</div>
 						{/* Get an instant offer */}
 						<div className="flex gap-2 w-[180px] h-[200px] rounded-xl ring-1 ring-slate-200 shadow-sm bg-white p-3">
-							<span>ico</span>
-							<div className="flex flex-col">
-								<h2 className="font-bold">2.Get an instant offer</h2>
+							<span>
+								<LuBadgeDollarSign />
+							</span>
+							<div className="flex flex-col gap-3">
+								<h2 className="font-bold text-xl">2.Get an instant offer</h2>
 								<p className="text-[#667085]">
 									No hidden fees, valid for 7 days
 								</p>
@@ -37,9 +41,11 @@ const Purchase = () => {
 						</div>
 						{/* tell us about your car */}
 						<div className="flex gap-2 w-[180px] h-[200px] rounded-xl ring-1 ring-slate-200 shadow-sm bg-white p-3">
-							<span>ico</span>
-							<div className="flex flex-col">
-								<h2 className="font-bold">3.Free pickup and payment</h2>
+							<span>
+								<FaRegHandshake />
+							</span>
+							<div className="flex flex-col gap-2">
+								<h2 className="font-bold text-xl">3.Free pickup and payment</h2>
 								<p className="text-[#667085]">
 									We pay on the spot, and handle DMV
 								</p>
