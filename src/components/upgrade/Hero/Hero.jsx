@@ -12,8 +12,8 @@ const Hero = () => {
 			id="hero"
 			className="bg-white py-[50px] my-[100px]"
 		>
-			<div className="flex flex-wrap items-center w-full max-w-[1500px] mx-auto">
-				<div className="flex-1 flex-col gap-8">
+			<div className="flex flex-wrap items-center w-full max-w-[1500px] mx-auto gap-8 justify-between px-8 lg:px-0">
+				<div className="w-full max-w-[600px] flex-col gap-8">
 					<div className="mb-4">
 						<p className="text-sm text-sky-600 bg-slate-200 rounded-lg py-2 px-3 w-fit flex items-center gap-2">
 							<GiStarSattelites />
@@ -29,23 +29,23 @@ const Hero = () => {
 						<br /> instant cash offers for your car, <br />
 						and a handpicked selection of vehicles for sale
 					</p>
-					<div className="flex gap-2 font-bold">
-						<button className="bg-blue-700 text-white py-3 px-6 rounded-3xl shadow-md flex items-center gap-2">
+					<div className="flex flex-wrap gap-2 font-bold">
+						<button className="bg-blue-700 text-white py-3 px-6 rounded-3xl shadow-md flex items-center gap-2 text-sm md:text-md">
 							<MdCarRental />
 							Rent a Car
 						</button>
-						<button className="bg-slate-200 text-blue-700 py-3 px-6 rounded-3xl shadow-md flex items-center gap-2">
+						<button className="bg-slate-200 text-blue-700 py-3 px-6 rounded-3xl shadow-md flex items-center gap-2 text-sm md:text-md">
 							<LuBadgeDollarSign />
 							Sell Your Car
 						</button>
-						<button className="bg-slate-200 text-blue-700 py-3 px-6 rounded-3xl shadow-md flex items-center gap-2">
+						<button className="bg-slate-200 text-blue-700 py-3 px-6 rounded-3xl shadow-md flex items-center gap-2 text-sm md:text-md">
 							<FiShoppingBag />
 							Browse Cars
 						</button>
 					</div>
 				</div>
 				{/* location form */}
-				<div className="ring-2 ring-slate-100 shadow-lg rounded-md p-8 flex flex-col">
+				<div className="ring-2 ring-slate-100 shadow-lg rounded-md p-8 flex flex-col w-full max-w-[600px]">
 					<div className="flex items-center gap-2">
 						<span>
 							<FiMapPin />
@@ -54,7 +54,7 @@ const Hero = () => {
 							<option>Pickup location</option>
 						</select>
 					</div>
-					<div className="flex items-center gap-2">
+					<div className="flex flex-wrap items-center gap-2">
 						<span>
 							<LuCalendarCheck />
 						</span>

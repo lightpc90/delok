@@ -1,5 +1,5 @@
 import React from "react";
-import { LuNotepadText, LuBadgeDollarSign } from "react-icons/lu";
+import { LuBadgeDollarSign } from "react-icons/lu";
 import { FaRegHandshake } from "react-icons/fa6";
 
 const Purchase = () => {
@@ -8,15 +8,15 @@ const Purchase = () => {
 			id="buy"
 			className="bg-[#eaf3ff] py-[50px]"
 		>
-			<div className="w-full max-w-[1500px] flex flex-col gap-4 mx-auto ">
+			<div className="w-full max-w-[1500px] flex flex-col gap-4 mx-auto px-8 lg:px-0 ">
 				<h1 className="font-bold text-3xl">Sell Your Car to Us</h1>
 				<p className="text-[#667085]">
 					Get a fast, fair cash offer. We handle paperwork and payment the same
 					day.
 				</p>
 				{/* cards */}
-				<div className="flex gap-3 w-full">
-					<div className="flex gap-3">
+				<div className="flex flex-wrap gap-3 w-full">
+					<div className="flex flex-wrap gap-3">
 						{/* tell us about your car */}
 						<div className="flex gap-2 w-[180px] h-[200px] rounded-xl ring-1 ring-slate-200 shadow-sm bg-white p-3 ">
 							<span>{/* <LuNotepadText /> */}</span>
@@ -53,21 +53,21 @@ const Purchase = () => {
 						</div>
 					</div>
 					{/* request an offer form */}
-					<div className="bg-[#ffffff] rounded-lg shadow-md px-8  py-[40px] flex-1 flex-col gap-6 ">
+					<div className="bg-[#ffffff] rounded-lg shadow-md px-8  py-[40px] flex-1 flex-col gap-6 w-full ">
 						<h2 className="my-2 font-bold">Request an Offer</h2>
-						<div className="w-full flex items-center gap-3 my-3">
+						<div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-3 my-3">
 							<input
-								className="w-full ring-2 ring-slate-200 rounded-md p-3"
+								className=" ring-2 ring-slate-200 rounded-md p-3"
 								type="text"
 								placeholder="Full name"
 							/>
 							<input
-								className="w-full ring-2 ring-slate-200 rounded-md p-3"
+								className=" ring-2 ring-slate-200 rounded-md p-3"
 								type="text"
 								placeholder="Email"
 							/>
 						</div>
-						<div className="w-full flex items-center gap-2 my-3">
+						<div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-2 my-3">
 							<input
 								className="w-full ring-2 ring-slate-200 rounded-md p-3"
 								type="number"
@@ -98,7 +98,7 @@ const Purchase = () => {
 						/>
 						<div className="flex items-center justify-between">
 							<p>By submitting, you agree to our terms. </p>
-							<button className="p-3 rounded-md shadow-md text-white bg-[#0b6cf6]">
+							<button className="p-3 rounded-md shadow-md text-white text-sm lg:text-md bg-[#0b6cf6]">
 								Get My Offer
 							</button>
 						</div>

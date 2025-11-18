@@ -8,7 +8,7 @@ const Rental = () => {
 			id="rental"
 			className=" py-[50px]"
 		>
-			<div className="w-full max-w-[1500px] mx-auto flex flex-col gap-4">
+			<div className="w-full max-w-[1500px] mx-auto flex flex-col gap-4 px-8 lg:px-0">
 				<h1 className="text-3xl font-bold">Car Rentals</h1>
 				<p className="text-[#667085]">
 					Find the perfect ride for your trip. Transparent pricing, daily or
@@ -16,8 +16,8 @@ const Rental = () => {
 				</p>
 				{/* input forms */}
 				<div className="bg-white ring-2 ring-slate-200 shadow-md rounded-lg flex flex-col gap-4 p-6 mx-auto w-full">
-					<div className="w-full flex items-center gap-3">
-						<label className="flex-1 w-full relative">
+					<div className="w-full flex flex-wrap items-start lg:items-center gap-3">
+						<label className="lg:flex-1 w-full relative">
 							<span className="absolute right-2 top-[50%] translate-y-[-50%] ">
 								<FiMapPin />
 							</span>
@@ -28,7 +28,7 @@ const Rental = () => {
 							/>
 						</label>
 
-						<label className="flex-1 w-full relative">
+						<label className="lg:flex-1 w-full relative">
 							<span className="absolute right-2 top-[50%] translate-y-[-50%] ">
 								<LuCalendarCheck />
 							</span>
@@ -39,7 +39,7 @@ const Rental = () => {
 								placeholder="Date"
 							/>
 						</label>
-						<label className="flex-1 w-full relative">
+						<label className="lg:flex-1 w-full relative">
 							<span className="absolute right-2 top-[50%] translate-y-[-50%] ">
 								<LuCar />
 							</span>
