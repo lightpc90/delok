@@ -6,7 +6,7 @@ const Contact = () => {
 			id="contact"
 			className="bg-[#eaf3ff] py-[50px]"
 		>
-			<div className="w-full max-w-[1500px] flex flex-col gap-4 mx-auto ">
+			<div className="w-full max-w-[1500px] flex flex-col gap-4 mx-auto px-8 lg:px-0 ">
 				<h1 className="text-4xl font-bold">Contact Us</h1>
 				<p>
 					Question about rentals, selling, or our inventory? We are here to
