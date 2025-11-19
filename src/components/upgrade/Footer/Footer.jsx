@@ -7,9 +7,9 @@ const Footer = () => {
 			id="footer"
 			className="bg-[#eaf3ff] py-[50px] text-[#043369]"
 		>
-			<div className="ring-2 ring-slate-200 max-w-[1500px] bg-[#f7faff] py-6 mx-auto flex flex-wrap justify-between px-6">
+			<div className="ring-2 ring-slate-200 max-w-[1500px] bg-[#f7faff] py-6 mx-auto flex flex-col lg:flex-row gap-4 lg:flex-wrap justify-between px-6">
 				{/* Website title */}
-				<div className="">
+				<div className="mb-8 lg:mb-0">
 					<div className="flex items-center gap-3 mb-2">
 						ico <h2 className="font-bold text-3xl">Delok Autos</h2>
 					</div>
