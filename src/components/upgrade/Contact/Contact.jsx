@@ -17,18 +17,18 @@ const Contact = () => {
 					{/* Enquiry form card */}
 					<div className="bg-white shadow-md rounded-xl p-4 flex flex-col gap-4 mx-w-[550px]">
 						<h3 className="font-bold">Send an inquiry</h3>
-						<div className="flex items-center gap-3 w-full">
+						<div className="flex items-center gap-3 flex-wrap w-full">
 							<input
 								type="text"
 								placeholder="Your name"
 								name="name"
-								className="rounded-xl shadow-md ring-2 ring-slate-200 p-3"
+								className="rounded-xl shadow-md ring-2 ring-slate-200 p-3 w-full lg:flex-1"
 							/>
 							<input
 								type="email"
 								placeholder="Email"
 								name="name"
-								className="rounded-xl shadow-md ring-2 ring-slate-200 p-3"
+								className="rounded-xl shadow-md ring-2 ring-slate-200 p-3 w-full lg:flex-1"
 							/>
 						</div>
 						<select className="p-3 rounded-xl shadow-md ring-2 ring-slate-200 outline-none">
